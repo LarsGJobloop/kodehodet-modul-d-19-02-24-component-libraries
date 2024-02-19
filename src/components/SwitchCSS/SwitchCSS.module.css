@@ -1,0 +1,41 @@
+/* Tailwind overwrites some default user styles */
+/* among those the button background */
+/* hence the use of !important for the background color */
+
+.container {
+  padding: 0rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-flex;
+  height: 38px;
+  width: 74px;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 99999px;
+  border-width: 2px;
+  border-color: transparent;
+  transition-property: color, background-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  background-color: rgb(76, 108, 98) !important;
+  --translate: 0px;
+}
+
+.enabled {
+  background-color: rgb(48, 186, 142) !important;
+  --translate: 2.25rem;
+}
+
+.span {
+  pointer-events: none;
+  display: inline-block;
+  height: 34px;
+  width: 34px;
+  transform: translate(var(--translate));
+  border-radius: 99999px;
+  background-color: white !important;
+  box-shadow: 1px 1px 2px 4px rgba(0, 0, 0, 0.172);
+  transition: all 200ms ease-in-out;
+}
