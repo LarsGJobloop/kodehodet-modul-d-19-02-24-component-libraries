@@ -1,7 +1,11 @@
+import { useMoTD } from "../../hooks/useMoTD";
+
 export function AboutPage() {
+  useMoTD("About page yheehaa!!");
+
   return (
     <main>
-      <h1 className="text-center">About Page</h1>
+      <h1>About Page</h1>
     </main>
   );
 }
