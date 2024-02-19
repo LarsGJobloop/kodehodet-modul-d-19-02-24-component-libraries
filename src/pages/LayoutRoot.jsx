@@ -62,7 +62,11 @@ export function LayoutRoot() {
             <h2 className="">Links</h2>
             <ul>
               <li>
-                <a target="_blank" href="" referrerPolicy="no-referrer">
+                <a
+                  target="_blank"
+                  href="https://github.com/LarsGJobloop/kodehodet-modul-d-19-02-24-component-libraries"
+                  referrerPolicy="no-referrer"
+                >
                   <FaGithubSquare size={30} />
                 </a>
               </li>
