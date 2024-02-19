@@ -8,13 +8,20 @@ export function MainPage() {
   return (
     <main>
       <header>
-        <h1>React Components</h1>
-        <p>
-          Here are two Swithches(toggles) from{" "}
-          <a href="https://headlessui.com/" referrerPolicy="no-referrer">
-            Headless UI
-          </a>
-        </p>
+        <h1 className="font-bold text-center underline">React Components</h1>
+        <div className="px-8">
+          <p>
+            Here are two Swithches(toggles) from{" "}
+            <a
+              className="inline-block text-blue-900 transition-all hover:rotate-3 active:rotate-0 hover:text-blue-700 hover:scale-105"
+              target="_blank"
+              href="https://headlessui.com/"
+              referrerPolicy="no-referrer"
+            >
+              Headless UI
+            </a>
+          </p>
+        </div>
       </header>
 
       <section className="flex flex-col items-center min-h-screen px-4 py-8 border-b shadow-xl">
@@ -56,6 +63,7 @@ export function MainPage() {
 
         <footer>
           <a
+            target="_blank"
             href="https://tailwindcss.com/docs/guides/vite"
             referrerPolicy="no-referrer"
           >
